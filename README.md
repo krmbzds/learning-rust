@@ -10,7 +10,7 @@ You need to install [Rust][rust_download_page] first.
 
 I'm going to use [Atom][atom_editor] editor, for no particular reason.
 
-As usual, I'm going to start by setting up an unnecessaily extravagant development environment. If you're on OSX or Linux you should be able to apply these steps without a problem. If you're on Windows: `¯\_(ツ)_/¯`.
+As usual, I'm going to start by setting up an unnecessarily extravagant development environment. If you're on OSX or Linux you should be able to apply these steps without a problem. If you're on Windows: `¯\_(ツ)_/¯`.
 
 Let's just install everything that doesn't have a dependency.
 
@@ -18,7 +18,7 @@ Let's just install everything that doesn't have a dependency.
 apm install language-rust         # Rust language support
 apm install linter                # You probably have this
 apm install linter-rust           # Rust linter
-apm install rust-api-docs-helper  # Browse documenation with a click
+apm install rust-api-docs-helper  # Browse documentation with a click
 apm install atom-browser-webview  # To browse documentation inside atom
 ```
 
@@ -45,15 +45,22 @@ echo 'export PATH="$PATH:$HOME/.cargo/bin" # To run Cargo binaries' >> ~/.profil
 echo 'export RUST_SRC_PATH=/usr/local/src/rust/src # Declare Rust source path' >> ~/.profile
 ```
 
-If all went well, you should now have a motherfuckingly badass setup.
+If you also want to auto-compile your code inside Atom, install:
 
-You're welcome. 
+```sh
+apm install build
+apm install build-cargo
+```
+
+If all went well, you should now have a *motherfuckingly badass* setup. Since you're doing everything inside the editor, you'll only have to leave it when you need to pee (unless you're coding in the toilet).
+
 
 # License
 
 [Mozilla Public License Version 2.0][license]
 
 For the kicks!
+
 
 [atom_editor]: https://atom.io/
 [rust_by_example]: http://rustbyexample.com/index.html
