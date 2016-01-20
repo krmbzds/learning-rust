@@ -4,7 +4,7 @@ I'm going to go over [Rust by Example][rust_by_example] and commit relevant stuf
 
 So I can check what I've done one day if I get \**ehm*\* Rusty.
 
-## Getting our shit together
+## Getting Our Shit Together
 
 You need to install [Rust][rust_download_page] first.
 
@@ -20,6 +20,8 @@ apm install linter                # You probably have this
 apm install linter-rust           # Rust linter
 apm install rust-api-docs-helper  # Browse documentation with a click
 apm install atom-browser-webview  # To browse documentation inside atom
+apm install script                # To run rust code inside the editor
+
 ```
 
 Now we'll configure autocompletion using the `racer` package. This part is a little tricky. We first need to install the Cargo package, the Atom plugin, then we need to download and extract the Rust source code in a way racer can read it.
@@ -45,15 +47,11 @@ echo 'export PATH="$PATH:$HOME/.cargo/bin" # To run Cargo binaries' >> ~/.profil
 echo 'export RUST_SRC_PATH=/usr/local/src/rust/src # Declare Rust source path' >> ~/.profile
 ```
 
-If you also want to auto-compile your code inside Atom, install:
-
-```sh
-apm install build
-apm install build-cargo
-```
-
 If all went well, you should now have a *motherfuckingly badass* setup. Since you're doing everything inside the editor, you'll only have to leave it when you need to pee (unless you're coding in the toilet).
 
+## Shorcuts
+
+You can use `cmd-i` to run your code examples inside the Atom editor.
 
 # License
 
