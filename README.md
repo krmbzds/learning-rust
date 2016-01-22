@@ -49,6 +49,8 @@ echo 'export RUST_SRC_PATH=/usr/local/src/rust/src # Declare Rust source path' >
 
 If all went well, you should now have a *motherfuckingly badass* setup. Since you're doing everything inside the editor, you'll only have to leave it when you need to pee (unless you're coding in the toilet).
 
+**More to come soon!** :beer:
+
 ## Shorcuts
 
 You can use `cmd-i` to run your code examples inside the Atom editor.
